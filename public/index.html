@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Researcher</title>
+  </head>
+  <header>
+    <a class="link_button" id="login_text" href="/login.html">Log In</a>
+    <a class="link_button" id="logout_text" disabled onclick="clearToken()">Log Out</a>
+    <a class="link_button" id="register_text" href="/register.html">Register</a>
+    <p id="welcome_text">Welcome, </p>
+  </header>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="parse-data.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
