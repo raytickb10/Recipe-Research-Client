@@ -1,0 +1,36 @@
+#welcome_text{
+  position: absolute;
+}
+
+.link_button{
+  position: absolute;
+  border: solid 2px red;
+  background: #f3f3f3;
+  padding: 0.4rem 0.6rem;
+  margin: 0 0.2rem;
+  border-radius: 1px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left: 0.7rem;
+  height:45px;
+  width:180px;
+}
+
+#login_text{
+  top: 20px;
+  right: 50px;
+  text-align:center;
+}
+
+#logout_text{
+  top: 20px;
+  right: 50px;
+  text-align:center;
+}
+
+#register_text{
+  top: 20px;
+  right: 250px;
+  text-align:center;
+}
