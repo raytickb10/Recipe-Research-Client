@@ -1,18 +1,27 @@
 body {
   background:#f3f3f3;
   background-image: url("https://cdn.glitch.com/36ca45c9-34d1-4293-a7fb-5e7df0257ce1%2Frecipe_research_background.jpg?1558434929599");
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-attachment: fixed;
-  background-size: 1550px 800px;
+  background-size: 1550px 1800px;
+}
+
+*{
+  box-sizing: border-box;
 }
 
 img {
   width: 100%;
   height: 220px;
+  width: 350px;
 }
 
 a {
-  color: red !important;
+  color: red;
+}
+
+#login_text{
+  color: black;
 }
 
 a:hover {
@@ -25,6 +34,19 @@ button:focus {
 
 button:hover{
   text-decoration:underline;
+}
+
+@media (max-width: 2000px) {
+  
+body {
+  background:#f3f3f3;
+  background-image: url("https://cdn.glitch.com/36ca45c9-34d1-4293-a7fb-5e7df0257ce1%2Frecipe_research_background.jpg?1558434929599");
+  background-attachment: fixed;
+  background-size: 1550px 1250px;
+}
+
+.link_button{
+  margin-top:10px;
 }
 
 .App {
@@ -43,6 +65,8 @@ button:hover{
 
 .App-title {
   font-size: 3.5em;
+  margin-top: -10px;
+  margin-bottom: 0;
 }
 
 .recipe_buttons {
@@ -59,11 +83,15 @@ button:hover{
 
 .recipes__box {
   background: #fff;
-  padding-bottom: 2rem;
+  padding-bottom: 1.8rem;
   border-radius: 5px;
   box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
   text-align: left;
   overflow: hidden;
+  width: 350px;
+  height: 420px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .recipe__text {
@@ -74,7 +102,8 @@ button:hover{
   color: red;
   text-transform: uppercase;
   font-size: 1.1rem;
-  padding: 1.8rem 0 0.2rem 0;
+  padding: 1.0rem 0 0.2rem 0;
+  margin: 0 0 0 0;
 }
 
 .recipes__subtitle {
@@ -131,7 +160,8 @@ input:-webkit-autofill {
 }
 
 .active-recipe__img {
-  height: 500px !important;
+  height: 500px;
+  width: 100%;
 }
 
 .active-recipe__title {
@@ -174,4 +204,86 @@ input:-webkit-autofill {
   text-transform: uppercase;
   font-weight: 500;
   background-color: #f3f3f3;
+}
+
+.col-md-4{
+  max-width: 33.3333%;
+  flex: 0 0 33%;
+  width: 100%;
+  height: 350px;
+  display: block;
+  margin-bottom: 5rem;
+}
+
+.row{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  
+}
+  
+h2{
+  text-align: center;
+  font-size: 3.5em;
+  margin-top: -10px;
+  margin-bottom: 100px;
+  color: #f3f3f3;
+  text-shadow: 2px 2px red;
+  font-family: impact;
+}
+  
+.labels{
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 400px;
+  color: #f3f3f3;
+  text-shadow: 2px 2px red;
+  font-family: impact;
+}
+  
+input[type=_text], input[type=password]{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 30px 400px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;  
+ }
+  
+input[type=_text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+  
+.form-error{
+  color: red;
+  margin: 8px 0 0 400px;
+  }
+  
+.registerbtn {
+  background-color: #366492;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0 0 400px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+  
+.signin {
+  background-color: #f1f1f1;
+  width: 350px;
+  margin: 8px 0 0 580px;
+  text-align: center;
+}
+  
 }
