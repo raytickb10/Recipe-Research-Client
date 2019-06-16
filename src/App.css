@@ -49,6 +49,12 @@ body {
   margin-top:10px;
 }
 
+.topright{
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+  
 .App {
   text-align: center;
 }
