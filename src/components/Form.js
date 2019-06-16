@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 const Form = props => (
   <form onSubmit={props.getRecipe} style={{ marginBottom:"2rem" }}>
