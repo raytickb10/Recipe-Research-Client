@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import {connect} from 'react-redux';
+import {Route, withRouter, NavLink} from 'react-router-dom';
 
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
@@ -33,6 +35,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Researcher</h1>
+          <NavLink exact to="/login" class="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
         <Form getRecipe={this.getRecipe} />
         <Recipes recipes={this.state.recipes} />
