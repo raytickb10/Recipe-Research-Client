@@ -5,7 +5,7 @@ import {Route, withRouter, NavLink} from 'react-router-dom';
 
 import Form from "./components/Form";
 import Recipes from "./components/Recipes";
-import HeaderBar from './header-bar';
+import HeaderBar from './components/header-bar';
 
 const API_KEY = "77a7004e5b982cb54e8e0b5031e70162";
 
