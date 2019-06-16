@@ -37,7 +37,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Recipe Researcher</h1>
           <HeaderBar />
-          <NavLink exact to="/login" class="link_button" id="login_text" >Log In / Register</NavLink>
+          <NavLink exact to="/login" class="link_button" id="login_text" enabled >Log In / Register</NavLink>
         </header>
         <Form getRecipe={this.getRecipe} />
         <Recipes recipes={this.state.recipes} />
