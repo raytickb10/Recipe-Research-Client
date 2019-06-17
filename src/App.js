@@ -35,7 +35,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-     myText: localStorage.getItem('userName') || 'Welcome'
+     myText: 'Welcome, ' + localStorage.getItem('userName') || 'Welcome'
    }
  }
   
