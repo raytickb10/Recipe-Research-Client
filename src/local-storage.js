@@ -15,6 +15,8 @@ export const saveUsername = userName => {
     console.log(localStorage.getItem('userName'));
     try{
         localStorage.setItem('userName', userName);
+        document.getElementsByClassName("welcome_text").textContent = "Welcome, " + localStorage.getItem("userName");
+        document.getElementsByClassName("welcome_text").style.visibility = "visible";
     } catch (e) {}
 };
 
@@ -24,5 +26,6 @@ export const clearAuthToken = () => {
         localStorage.removeItem('userName');
         document.getElementById("login_text").disabled = false;
         document.getElementById("login_text").style.visibility = "visible";
+        document.getElementsByClassName("welcome_text").style.visibility = "hidden";
     } catch (e) {}
 };
