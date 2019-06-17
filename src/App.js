@@ -31,7 +31,7 @@ class App extends Component {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);
   }
-  render() {
+  render:function() {
     
     var welcome_text = "";
     
