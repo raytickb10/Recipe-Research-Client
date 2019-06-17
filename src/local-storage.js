@@ -1,7 +1,6 @@
 export const loadAuthToken = () => {
     console.log(localStorage.getItem('authToken'));
     console.log(localStorage.getItem('userName'));
-    document.getElementsByClassName("recipe_buttons").style.visibility = "visible";
     return localStorage.getItem('authToken');
 };
 
