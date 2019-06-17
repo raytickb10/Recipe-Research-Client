@@ -25,5 +25,6 @@ export const clearAuthToken = () => {
         localStorage.removeItem('userName');
         document.getElementById("login_text").disabled = false;
         document.getElementById("login_text").style.visibility = "visible";
+        window.location.reload();
     } catch (e) {}
 };
