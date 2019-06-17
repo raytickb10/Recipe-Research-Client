@@ -32,9 +32,12 @@ class App extends Component {
     localStorage.setItem("recipes", recipes);
   }
   
-  const value = React.useState(
-    localStorage.getItem('userName') || 'Welcome'
-  );
+  constructor(props){
+    super(props);
+    value = React.useState(
+      localStorage.getItem('userName') || 'Welcome'
+    );
+  }
   
   render() {
     return (
