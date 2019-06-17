@@ -36,7 +36,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Researcher</h1>
-          <h3 className="welcome_text" id="testing_text" style={{visibility: 'hidden'}}>Welcome </h3>
+          <h3 className="welcome_text" id="testing_text" >Welcome </h3>
           <HeaderBar />
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
