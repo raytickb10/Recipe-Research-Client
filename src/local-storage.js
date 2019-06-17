@@ -10,12 +10,15 @@ export const saveAuthToken = authToken => {
         document.getElementById("login_text").disabled = true;
         document.getElementById("login_text").style.visibility = "hidden";
     } catch (e) {}
+    console.log(localStorage.getItem('authToken'));
 };
 
 export const saveUsername = userName => {
     try{
         localStorage.setItem('userName', userName);
     } catch (e) {}
+    console.log(localStorage.getItem('userName'));
+    document.getElementById("testing_text").style.visibility = "hidden";
 };
 
 export const clearAuthToken = () => {
@@ -24,6 +27,5 @@ export const clearAuthToken = () => {
         localStorage.removeItem('userName');
         document.getElementById("login_text").disabled = false;
         document.getElementById("login_text").style.visibility = "visible";
-        document.getElementsByClassName("welcome_text").style.visibility = "hidden";
     } catch (e) {}
 };
