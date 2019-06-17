@@ -8,6 +8,7 @@ import Recipes from "./components/Recipes";
 import HeaderBar from './components/header-bar';
 
 const API_KEY = "77a7004e5b982cb54e8e0b5031e70162";
+let value = 'testing';
 
 class App extends Component {
   state = {
@@ -31,7 +32,7 @@ class App extends Component {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);
   }
-  let value = 'testing';
+  
   constructor(props){
     super(props);
     value = React.useState(
