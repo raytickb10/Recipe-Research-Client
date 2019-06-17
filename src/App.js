@@ -8,6 +8,7 @@ import Recipes from "./components/Recipes";
 import HeaderBar from './components/header-bar';
 
 const API_KEY = "77a7004e5b982cb54e8e0b5031e70162";
+const value = 'testing';
 
 class App extends Component {
   state = {
@@ -34,7 +35,7 @@ class App extends Component {
   
   constructor(props){
     super(props);
-    const value = React.useState(
+    value = React.useState(
       localStorage.getItem('userName') || 'Welcome'
     );
   }
