@@ -35,7 +35,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      if(localStorage.getItem('userName') !== null){
+      if(localStorage.getItem('userName') != null){
         myText: 'Welcome ' + localStorage.getItem('userName')
       }
      else{
