@@ -31,12 +31,17 @@ class App extends Component {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);
   }
+  
+  const [value] = React.useState(
+    localStorage.getItem('userName') || 'Welcome'
+  );
+  
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Researcher</h1>
-          <div className="welcome_text"><p  id="testing_text" >Welcome </p></div>
+          <div className="welcome_text"><p  id="testing_text" >{value}</p></div>
           <HeaderBar />
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
