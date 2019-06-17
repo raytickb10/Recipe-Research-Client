@@ -60,14 +60,12 @@ body {
   top: 20px;
   left: 0px;
   color: #f3f3f3;
-  margin: 10px 100px 0 0;
   font-family: impact;
   text-shadow: 2px 2px red;
+  position: absolute;
   }
   
  .welcome_text{
-  margin: 10px 0px 0px 100px;
-  position: absolute;
   width: 200px;
   }
   
