@@ -91,6 +91,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 0.7rem;
+  cursor: pointer;
 }
 
 .recipes__box {
@@ -101,7 +102,7 @@ body {
   text-align: left;
   overflow: hidden;
   width: 350px;
-  height: 380px;
+  height: 410px;
   margin-bottom: 30px;
   display: inline-block;
 }
@@ -152,6 +153,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   margin-left: 0.7rem;
+  cursor: pointer;
 }
 
 input[type="text"] { 
