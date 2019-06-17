@@ -15,8 +15,8 @@ export const saveAuthToken = authToken => {
 export const saveUsername = userName => {
     try{
         localStorage.setItem('userName', userName);
-        document.getElementsByClassName("welcome_text").textContent = "Welcome, " + localStorage.getItem("userName");
-        document.getElementsByClassName("welcome_text").style.visibility = "visible";
+        document.getElementById("testing_text").textContent = "Welcome, " + localStorage.getItem("userName");
+        document.getElementById("testing_text").style.visibility = "visible";
     } catch (e) {}
 };
 
