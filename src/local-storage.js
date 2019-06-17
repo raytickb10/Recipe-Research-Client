@@ -1,5 +1,3 @@
-import {Redirect} from 'react-router-dom';
-
 export const loadAuthToken = () => {
     return localStorage.getItem('authToken');
 };
@@ -27,6 +25,6 @@ export const clearAuthToken = () => {
         localStorage.removeItem('userName');
         document.getElementById("login_text").disabled = false;
         document.getElementById("login_text").style.visibility = "visible";
-        <Redirect to="/" />;
+        window.location.href = window.location.href;
     } catch (e) {}
 };
