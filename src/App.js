@@ -34,7 +34,7 @@ class App extends Component {
   
   constructor(props){
     super(props);
-    value = React.useState(
+    const value = React.useState(
       localStorage.getItem('userName') || 'Welcome'
     );
   }
