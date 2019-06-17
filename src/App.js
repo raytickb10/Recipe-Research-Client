@@ -36,11 +36,11 @@ class App extends Component {
     super();
     let value = '';
     if(localStorage.getItem('userName') !== null){
-      value = localStorage.getItem('userName');
+      value = 'Welcome, ' localStorage.getItem('userName');
     }
     else{value = '';}
     this.state = {
-      myText: 'Welcome ' + value
+      myText: value
    }
  }
   
