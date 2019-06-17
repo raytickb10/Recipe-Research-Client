@@ -1,9 +1,10 @@
 export const loadAuthToken = () => {
+    console.log(localStorage.getItem('authToken'));
+    console.log(localStorage.getItem('userName'));
     return localStorage.getItem('authToken');
 };
 
-export const saveAuthToken = authToken => {
-    console.log(localStorage.getItem('authToken'));
+export const saveAuthToken = authToken => {    
     try {
         localStorage.setItem('authToken', authToken);
         document.getElementById("login_text").disabled = true;
@@ -12,7 +13,6 @@ export const saveAuthToken = authToken => {
 };
 
 export const saveUsername = userName => {
-    console.log(localStorage.getItem('userName'));
     try{
         localStorage.setItem('userName', userName);
         document.getElementsByClassName("welcome_text").textContent = "Welcome, " + localStorage.getItem("userName");
