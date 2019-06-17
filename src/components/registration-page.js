@@ -16,7 +16,7 @@ export function RegistrationPage(props) {
             <h2>Register for Recipe Researcher</h2>
             </header>
             <RegistrationForm />
-            <div class="container signin">
+            <div className="container signin">
               <p>Already have an account? <Link to="/login">LOGIN</Link> </p>
               <p>Or return to homepage. <Link to="/">HOME</Link> </p>
             </div>
