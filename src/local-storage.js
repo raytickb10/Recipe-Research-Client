@@ -1,8 +1,10 @@
 export const loadAuthToken = () => {
     console.log(localStorage.getItem('authToken'));
     console.log(localStorage.getItem('userName'));
-    document.getElementById("testing_text").textContent = "Welcome, " + localStorage.getItem("userName");
-    document.getElementById("testing_text").style.visibility = "visible";
+    if(localStorage.getItem('userName') != null){
+        document.getElementById("testing_text").textContent = "Welcome, " + localStorage.getItem("userName");
+        document.getElementById("testing_text").style.visibility = "visible";
+    }
     return localStorage.getItem('authToken');
 };
 
@@ -17,8 +19,6 @@ export const saveAuthToken = authToken => {
 export const saveUsername = userName => {
     try{
         localStorage.setItem('userName', userName);
-        document.getElementById("testing_text").textContent = "Welcome, " + localStorage.getItem("userName");
-        document.getElementById("testing_text").style.visibility = "visible";
     } catch (e) {}
 };
 
