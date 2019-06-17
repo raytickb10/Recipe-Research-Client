@@ -32,11 +32,17 @@ class App extends Component {
     localStorage.setItem("recipes", recipes);
   }
   render() {
+    
+    if(localStorage.getItem('authToken') === null)
+    {
+      welcome_text = "displayNone";
+    }
+    
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Researcher</h1>
-          <h3 className="welcome_text" style={{visibility: 'hidden'}}>Welcome </h3>
+          <h3 className="welcome_text"}>Welcome </h3>
           <HeaderBar />
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
