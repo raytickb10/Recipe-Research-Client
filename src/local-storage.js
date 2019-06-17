@@ -1,9 +1,6 @@
 export const loadAuthToken = () => {
     console.log(localStorage.getItem('authToken'));
     console.log(localStorage.getItem('userName'));
-    if(localStorage.getItem('userName') != null){
-        document.getElementById("testing_text").textContent = "Welcome, " + localStorage.getItem("userName");
-    }
     return localStorage.getItem('authToken');
 };
 
