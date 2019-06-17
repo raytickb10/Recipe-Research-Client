@@ -36,7 +36,7 @@ class App extends Component {
     super();
     let value = '';
     if(localStorage.getItem('userName') !== null){
-      value = 'Welcome, ' localStorage.getItem('userName');
+      value = 'Welcome, ' + localStorage.getItem('userName');
     }
     else{value = '';}
     this.state = {
