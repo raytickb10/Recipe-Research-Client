@@ -16,7 +16,7 @@ export function LandingPage(props) {
             <h2>Log In to Recipe Researcher</h2>
             </header>
             <LoginForm />
-            <div class="container signin">
+            <div className="container signin">
               <p>Don't have an account? <Link to="/register">REGISTER</Link> </p>
               <p>Or return to homepage. <Link to="/">HOME</Link> </p>
             </div>
