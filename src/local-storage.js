@@ -1,7 +1,6 @@
 export const loadAuthToken = () => {
     console.log(localStorage.getItem('authToken'));
     console.log(localStorage.getItem('userName'));
-    ReactDOM.findDOMNode(Component).getElementsByClassName("welcome_text").style.visibility = "visible";
     return localStorage.getItem('authToken');
 };
 
