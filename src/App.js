@@ -31,7 +31,7 @@ class App extends Component {
     const recipes = JSON.stringify(this.state.recipes);
     localStorage.setItem("recipes", recipes);
   }
-  var value = 'testing';
+  let value = 'testing';
   constructor(props){
     super(props);
     value = React.useState(
