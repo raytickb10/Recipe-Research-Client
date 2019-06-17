@@ -8,7 +8,6 @@ import Recipes from "./components/Recipes";
 import HeaderBar from './components/header-bar';
 
 const API_KEY = "77a7004e5b982cb54e8e0b5031e70162";
-let value = 'testing';
 
 class App extends Component {
   state = {
@@ -33,19 +32,18 @@ class App extends Component {
     localStorage.setItem("recipes", recipes);
   }
   
-  constructor(props){
-    super(props);
-    value = React.useState(
-      localStorage.getItem('userName') || 'Welcome'
-    );
-  }
+  constructor(){
+    super();
+    this.state = {
+     myText: localStorage.getItem('userName') || 'Welcome'
+   }
   
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Researcher</h1>
-          <div className="welcome_text"><p  id="testing_text" >{value}</p></div>
+          <div className="welcome_text"><p  id="testing_text" >{this.state.myText}</p></div>
           <HeaderBar />
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
