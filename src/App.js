@@ -34,13 +34,13 @@ class App extends Component {
   
   constructor(){
     super();
+    let value = '';
+    if(localStorage.getItem('userName') !== null){
+      value = localStorage.getItem('userName');
+    }
+    else{value = '';}
     this.state = {
-      if(localStorage.getItem('userName') != null){
-        myText: 'Welcome ' + localStorage.getItem('userName')
-      }
-     else{
-        myText: ''
-     }
+      myText: 'Welcome ' + value
    }
  }
   
