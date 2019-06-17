@@ -55,6 +55,12 @@ body {
   right: 70px;
   }
   
+ #testing_text{
+  text-align: center;
+  top: 20px;
+  left: 50px;
+  }
+  
 .App {
   text-align: center;
 }
