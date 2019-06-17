@@ -24,25 +24,25 @@ export class RegistrationForm extends React.Component {
                 onSubmit={this.props.handleSubmit(values =>
                     this.onSubmit(values)
                 )}>
-                <label htmlFor="firstName" class="labels">First name</label>
+                <label htmlFor="firstName" className="labels">First name</label>
                 <Field component={Input} type="_text" name="firstName" />
-                <label htmlFor="lastName" class="labels">Last name</label>
+                <label htmlFor="lastName" className="labels">Last name</label>
                 <Field component={Input} type="_text" name="lastName" />
-                <label htmlFor="username" class="labels">Username</label>
+                <label htmlFor="username" className="labels">Username</label>
                 <Field
                     component={Input}
                     type="_text"
                     name="username"
                     validate={[required, nonEmpty, isTrimmed]}
                 />
-                <label htmlFor="password" class="labels">Password</label>
+                <label htmlFor="password" className="labels">Password</label>
                 <Field
                     component={Input}
                     type="password"
                     name="password"
                     validate={[required, passwordLength, isTrimmed]}
                 />
-                <label htmlFor="passwordConfirm" class="labels">Confirm password</label>
+                <label htmlFor="passwordConfirm" className="labels">Confirm password</label>
                 <Field
                     component={Input}
                     type="password"
@@ -50,7 +50,7 @@ export class RegistrationForm extends React.Component {
                     validate={[required, nonEmpty, matchesPassword]}
                 />
                 <button
-                    class="registerbtn"
+                    className="registerbtn"
                     type="_submit"
                     disabled={this.props.pristine || this.props.submitting}>
                     Register
