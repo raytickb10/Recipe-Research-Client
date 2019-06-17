@@ -3,7 +3,6 @@ export const loadAuthToken = () => {
     console.log(localStorage.getItem('userName'));
     if(localStorage.getItem('userName') != null){
         document.getElementById("testing_text").textContent = "Welcome, " + localStorage.getItem("userName");
-        document.getElementById("testing_text").style.visibility = "visible";
     }
     return localStorage.getItem('authToken');
 };
