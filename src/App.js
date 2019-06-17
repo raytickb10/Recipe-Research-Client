@@ -37,6 +37,7 @@ class App extends Component {
     this.state = {
      myText: localStorage.getItem('userName') || 'Welcome'
    }
+ }
   
   render() {
     return (
