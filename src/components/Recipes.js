@@ -3,13 +3,6 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Recipes = props => (
-  const value = React.useState(
-    if(localStorage.getItem('authToken') !== null){
-      'hidden'
-    }
-    else{'shown'}
-  );
-  
   <div className="container">
     <div className="row">
     { props.recipes && props.recipes.map((recipe) => {
