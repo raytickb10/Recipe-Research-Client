@@ -44,6 +44,12 @@ body {
   background-attachment: fixed;
   background-size: 1550px 1250px;
 }
+  
+.explain_text{
+  position: absolute;
+  text-align: center;
+  bottom: 100px;
+}
 
 .link_button{
   margin-top:10px;
