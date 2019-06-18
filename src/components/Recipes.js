@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Recipes = props => (
-  const [value] = React.useState(
+  const value = React.useState(
     if(localStorage.getItem('authToken') !== null){
       'hidden'
     }
