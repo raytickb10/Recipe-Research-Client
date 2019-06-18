@@ -6,18 +6,6 @@ const Recipes = props => (
   <div className="container">
     <div className="row">
     { props.recipes && props.recipes.map((recipe) => {
-  
-  constructor(){
-  super();
-  let showoff = 'hidden';
-    if(localStorage.getItem('authToken') !== null){
-      showoff = 'shown';
-    }
-    else{value = 'hidden';}
-    this.state = {
-      value: showoff
-   }
-}
       return (
         <div key={recipe.title} className="col-md-4" >
           <div className="recipes__box">
@@ -36,7 +24,7 @@ const Recipes = props => (
                 <Link to={{ 
                   pathname: `/recipe/${recipe.recipe_id}`,
                   state: { recipe: recipe.title }
-              }}><button className="recipe_buttons" style={value}>View Recipe</button></Link>
+              }}><button className="recipe_buttons" style={newvalue}>View Recipe</button></Link>
               
           </div>
         </div>
