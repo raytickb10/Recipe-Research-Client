@@ -21,11 +21,14 @@ const Recipes = props => (
                   { recipe.publisher }
                 </span></p>
               </div>
-                <Link to={{ 
+              if(localStorage.getItem('authToken') !== null){  
+              <Link to={{ 
                   pathname: `/recipe/${recipe.recipe_id}`,
                   state: { recipe: recipe.title }
-              }}><button className="recipe_buttons">View Recipe</button></Link>
-              
+              }}>
+                <button className="recipe_buttons">View Recipe</button>
+               </Link>
+            }
           </div>
         </div>
       );
