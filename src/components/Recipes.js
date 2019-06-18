@@ -3,6 +3,9 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Recipes = props => (
+  <div className="container">
+    <div className="row">
+    { props.recipes && props.recipes.map((recipe) => {
   
   constructor(){
   super();
@@ -15,10 +18,6 @@ const Recipes = props => (
       value: showoff
    }
 }
-  
-  <div className="container">
-    <div className="row">
-    { props.recipes && props.recipes.map((recipe) => {
       return (
         <div key={recipe.title} className="col-md-4" >
           <div className="recipes__box">
