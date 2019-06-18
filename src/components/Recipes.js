@@ -2,7 +2,11 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
-const Recipes = props => (
+export class Recipes extends React.Component {
+  
+  
+  
+  const newRecipes = props => (
   <div className="container">
     <div className="row">
     { props.recipes && props.recipes.map((recipe) => {
@@ -33,5 +37,6 @@ const Recipes = props => (
     </div>
   </div>
 );
+}
 
 export default Recipes;
