@@ -60,7 +60,9 @@ class App extends Component {
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
         <Form getRecipe={this.getRecipe} />
-        <Recipes recipes={this.state.recipes} style={{visibility: this.state.showandtell}} />
+        <div style={{visibility: this.state.showandtell}}>
+          <Recipes recipes={this.state.recipes} />
+        </div>
       </div>
     );
   }
