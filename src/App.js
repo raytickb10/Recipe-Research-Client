@@ -36,17 +36,21 @@ class App extends Component {
     super();
     let value = '';
     let showoff = 'hidden';
+    let noshow = 'visible';
     if(localStorage.getItem('userName') !== null){
       value = 'Welcome, ' + localStorage.getItem('userName');
       showoff = 'visible';
+      noshow = 'hidden';
     }
     else{
       value = '';
       showoff = 'hidden';
+      noshow = 'visible';
     }
     this.state = {
       myText: value,
-      showandtell: showoff
+      showandtell: showoff,
+      explanation: noshow
    }
  }
   
@@ -60,6 +64,7 @@ class App extends Component {
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
         <Form getRecipe={this.getRecipe} />
+        <h2 className="explain_text" style={{visibility: this.state.explanation}}>MUST BE LOGGED IN TO VIEW RECIPES</h2>
         <div style={{visibility: this.state.showandtell}}>
           <Recipes recipes={this.state.recipes} />
         </div>
