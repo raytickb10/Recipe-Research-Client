@@ -3,6 +3,13 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 const Recipes = props => (
+  const [value] = React.useState(
+    if(localStorage.getItem('authToken') !== null){
+      'hidden'
+    }
+    else{'shown'}
+  );
+  
   <div className="container">
     <div className="row">
     { props.recipes && props.recipes.map((recipe) => {
@@ -24,7 +31,7 @@ const Recipes = props => (
                 <Link to={{ 
                   pathname: `/recipe/${recipe.recipe_id}`,
                   state: { recipe: recipe.title }
-              }}><button className="recipe_buttons">View Recipe</button></Link>
+              }}><button className="recipe_buttons" style={value}>View Recipe</button></Link>
               
           </div>
         </div>
