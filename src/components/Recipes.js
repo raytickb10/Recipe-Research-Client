@@ -21,7 +21,11 @@ const Recipes = props => (
                   { recipe.publisher }
                 </span></p>
               </div>
-              {value}
+                <Link to={{ 
+                  pathname: `/recipe/${recipe.recipe_id}`,
+                  state: { recipe: recipe.title }
+              }}><button className="recipe_buttons">View Recipe</button></Link>
+              
           </div>
         </div>
       );
@@ -29,17 +33,5 @@ const Recipes = props => (
     </div>
   </div>
 );
-
-$(function(){
-  if(localStorage.getItem('authToken') !== null){  
-          let value = <Link to={{ 
-                  pathname: `/recipe/${recipe.recipe_id}`,
-                  state: { recipe: recipe.title }
-              }}>
-                <button className="recipe_buttons">View Recipe</button>
-               </Link>
-            }
-else{value = <p>this is working</p>}
-});
 
 export default Recipes;
