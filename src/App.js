@@ -35,12 +35,18 @@ class App extends Component {
   constructor(){
     super();
     let value = '';
+    let showoff = 'hidden';
     if(localStorage.getItem('userName') !== null){
       value = 'Welcome, ' + localStorage.getItem('userName');
+      showoff = 'shown';
     }
-    else{value = '';}
+    else{
+      value = '';
+      showoff = 'hidden';
+    }
     this.state = {
-      myText: value
+      myText: value,
+      showandtell: showoff
    }
  }
   
@@ -54,7 +60,7 @@ class App extends Component {
           <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
         </header>
         <Form getRecipe={this.getRecipe} />
-        <Recipes recipes={this.state.recipes} />
+        <Recipes recipes={this.state.recipes} style={this.state.showandtell} />
       </div>
     );
   }
