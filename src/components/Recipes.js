@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 
 export class Recipes extends React.Component {
   
-  
-  
-  const newRecipes = props => (
+ render(){
   <div className="container">
     <div className="row">
     { props.recipes && props.recipes.map((recipe) => {
-    render(){
+    
       return (
         <div key={recipe.title} className="col-md-4" >
           <div className="recipes__box">
@@ -34,11 +32,10 @@ export class Recipes extends React.Component {
           </div>
         </div>
       );
-    }
     })}
     </div>
   </div>
-);
+}
 }
 
 export default Recipes;
