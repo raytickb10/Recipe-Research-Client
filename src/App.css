@@ -48,7 +48,8 @@ body {
 .explain_text{
   position: absolute;
   text-align: center;
-  bottom: 100px;
+  top: 300px;
+  right: 300px;
 }
 
 .link_button{
