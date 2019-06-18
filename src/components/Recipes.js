@@ -2,7 +2,9 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
-constructor(){
+const Recipes = props => (
+  
+  constructor(){
   super();
   let showoff = 'hidden';
     if(localStorage.getItem('authToken') !== null){
@@ -13,9 +15,7 @@ constructor(){
       value: showoff
    }
 }
-    
-
-const Recipes = props => (
+  
   <div className="container">
     <div className="row">
     { props.recipes && props.recipes.map((recipe) => {
