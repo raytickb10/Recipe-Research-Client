@@ -61,7 +61,9 @@ class App extends Component {
           <h1 className="App-title">Recipe Researcher</h1>
           <div className="welcome_text"><p  id="testing_text" >{this.state.myText}</p></div>
           <HeaderBar />
-          <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
+          <div style={{visibility: this.state.explanation}}>
+            <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
+          </div>
         </header>
         <Form getRecipe={this.getRecipe} />
         <h2 className="explain_text" style={{visibility: this.state.explanation}}>MUST BE LOGGED IN TO VIEW RECIPES</h2>
