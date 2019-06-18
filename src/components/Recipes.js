@@ -2,6 +2,19 @@ import React from 'react';
 
 import { Link } from "react-router-dom";
 
+constructor(){
+  super();
+  let showoff = 'hidden';
+    if(localStorage.getItem('authToken') !== null){
+      showoff = 'shown';
+    }
+    else{value = 'hidden';}
+    this.state = {
+      value: showoff
+   }
+}
+    
+
 const Recipes = props => (
   <div className="container">
     <div className="row">
@@ -24,7 +37,7 @@ const Recipes = props => (
                 <Link to={{ 
                   pathname: `/recipe/${recipe.recipe_id}`,
                   state: { recipe: recipe.title }
-              }}><button className="recipe_buttons">View Recipe</button></Link>
+              }}><button className="recipe_buttons" style={value}>View Recipe</button></Link>
               
           </div>
         </div>
