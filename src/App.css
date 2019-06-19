@@ -327,7 +327,7 @@ input[type=_text]:focus, input[type=password]:focus {
   text-align: center;
 }
   
-  @media (max-width: 800px) {
+  @media (max-width: 380px) {
   
     #login_text{
       top: 90px;
