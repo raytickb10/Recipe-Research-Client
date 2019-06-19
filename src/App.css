@@ -333,6 +333,11 @@ input[type=_text]:focus, input[type=password]:focus {
       background-size: 800px 1200px;
     }
     
+    .topright{
+      top: 100px;
+      right: 40px;
+    }
+    
     #login_text{
       top: 90px;
     }
