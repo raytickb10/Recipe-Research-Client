@@ -7,3 +7,5 @@ Username: tester
 Password: password123
 
 This will allow users to check the functionality of the application.
+
+Here is the link to the application: https://recipe-research.herokuapp.com/
