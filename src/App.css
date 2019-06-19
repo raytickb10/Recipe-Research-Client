@@ -329,6 +329,10 @@ input[type=_text]:focus, input[type=password]:focus {
   
   @media (max-width: 800px) {
   
+    body{
+      background-size: 800px 1200px;
+    }
+    
     #login_text{
       top: 90px;
     }
@@ -347,11 +351,11 @@ input[type=_text]:focus, input[type=password]:focus {
     }
     
     .form__input{
-      width: 30%;
+      width: 20%;
     }
     
     .explain_text{
-      right: none;
+      right: 60px;
     }
     
     #testing_text{
