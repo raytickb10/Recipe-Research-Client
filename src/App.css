@@ -327,4 +327,67 @@ input[type=_text]:focus, input[type=password]:focus {
   text-align: center;
 }
   
+  @media (max-width: 800px) {
+  
+    #login_text{
+      top: 90px;
+    }
+    
+    .recipes_box{
+      width: 220px;
+    }
+    
+    .signin, .resterbtn, .form-error, .labels, input[type=_text], input[type=password] {
+      margin-left: 300px;
+    }
+    
+    h2{
+      font: 2.5em;
+    }
+    
+    .form_input{
+      width: 30%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+  
+    .App-title{
+      font: 2.5em;
+      margin-top: 10px;
+     }
+    
+    .link_button{
+      font-size: 10px;
+      width: 100px;
+      height: 30px;
+      margin-top: 80px;
+    }
+    
+    .col-md-4{
+      max-width: 60%;
+      height: none;
+    }
+    
+    .form__input{
+      width: 30%;
+    }
+    
+    .labels{
+      margin-left: 100px;
+    }
+    
+    .signin{
+      margin-left: 10px;
+    }
+    
+    .active-recipe__img{
+      height: none;
+    }
+    
+    .active-recipe__website{
+      font-size: 15px;
+    }
+  }
+  
 }
