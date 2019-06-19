@@ -397,10 +397,14 @@ input[type=_text]:focus, input[type=password]:focus {
      }
     
     .link_button{
-      font-size: 10px;
-      width: 100px;
-      height: 30px;
+      font-size: 18px;
+      width: 200px;
+      height: 40px;
       margin-top: 80px;
+    }
+    
+    #login_text{
+      right: 80px;
     }
     
     .col-md-4{
@@ -428,8 +432,16 @@ input[type=_text]:focus, input[type=password]:focus {
       font-size: 15px;
     }
     
-    .signin, .registerbtn, .form-error, .labels, input[type=_text], input[type=password] {
+    .registerbtn, .form-error, .labels, input[type=_text], input[type=password] {
       margin-left: 100px;
+    }
+    
+    .explain_text{
+      right: 0px;
+    }
+    
+    body {
+      background-size: 400px 800px;
     }
   }
   
