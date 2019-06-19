@@ -333,27 +333,40 @@ input[type=_text]:focus, input[type=password]:focus {
       top: 90px;
     }
     
-    .recipes_box{
+    .recipes__box{
       width: 220px;
     }
     
-    .signin, .resterbtn, .form-error, .labels, input[type=_text], input[type=password] {
-      margin-left: 300px;
+    .signin, .registerbtn, .form-error, .labels, input[type=_text], input[type=password] {
+      margin-left: 250px;
     }
     
     h2{
-      font: 2.5em;
+      font-size: 2.5em;
+      margin-top: 10px;
     }
     
-    .form_input{
+    .form__input{
       width: 30%;
+    }
+    
+    .explain_text{
+      right: none;
+    }
+    
+    #testing_text{
+      left: 30px;
+    }
+    
+    .active-recipe__img{
+      height: 100%;
     }
   }
   
   @media (max-width: 380px) {
   
     .App-title{
-      font: 2.5em;
+      font-size: 2.5em;
       margin-top: 10px;
      }
     
