@@ -374,6 +374,23 @@ input[type=_text]:focus, input[type=password]:focus {
   
   @media (max-width: 380px) {
   
+    h2{
+      font-size: 1.8em;
+      margin-top: -5px;
+    }
+    
+    .recipes__box{
+      width: 330px;
+    }
+    
+    #testing_text{
+      top: 60px;
+    }
+    
+    .topright{
+      top: 75px;
+    }
+    
     .App-title{
       font-size: 2.5em;
       margin-top: 10px;
@@ -409,6 +426,10 @@ input[type=_text]:focus, input[type=password]:focus {
     
     .active-recipe__website{
       font-size: 15px;
+    }
+    
+    .signin, .registerbtn, .form-error, .labels, input[type=_text], input[type=password] {
+      margin-left: 100px;
     }
   }
   
