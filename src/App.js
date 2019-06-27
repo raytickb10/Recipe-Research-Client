@@ -8,6 +8,7 @@ import Recipes from "./components/Recipes";
 import HeaderBar from './components/header-bar';
 
 const API_KEY = "77a7004e5b982cb54e8e0b5031e70162";
+let explain = "Welcome to Recipe Researcher, a quick and easy guide to all things food. Get started by first logging in with our test account (username:tester password: password123) or sign up for a free account today. Then thousands of recipes are only a click away. So way are you waiting for, get started now!";
 
 class App extends Component {
   state = {
@@ -66,7 +67,7 @@ class App extends Component {
           </div>
         </header>
         <Form getRecipe={this.getRecipe} />
-        <h2 className="explain_text" style={{visibility: this.state.explanation}}>MUST BE LOGGED IN TO VIEW RECIPES</h2>
+        <h2 className="explain_text" style={{visibility: this.state.explanation}}>explain, Then get . the goose</h2>
         <div style={{visibility: this.state.showandtell}}>
           <Recipes recipes={this.state.recipes} />
         </div>
