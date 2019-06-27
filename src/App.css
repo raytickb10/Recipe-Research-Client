@@ -351,6 +351,11 @@ input[type=_text]:focus, input[type=password]:focus {
       background-size: 800px auto;
     }
     
+    #testing_text {
+    top: 140px;
+    right: 20px;
+  }
+    
     .col-md-4{
       max-width: 33.3333%;
       flex: 0 0 33%;
@@ -397,6 +402,8 @@ input[type=_text]:focus, input[type=password]:focus {
     .active-recipe__img{
       height: 100%;
     }
+    
+    
   }
   
   @media (max-width: 730px) {
@@ -429,13 +436,18 @@ input[type=_text]:focus, input[type=password]:focus {
       margin-top: -5px;
     }
     
+    #testing_text {
+    top: 140px;
+    right: 20px;
+  }
+    
+    .topright{
+      right: 10px;
+    }
+    
     .recipes__box{
       width: 320px;
       margin-left: -8px;
-    }
-    
-    #testing_text{
-      top: 60px;
     }
     
     .topright{
@@ -508,6 +520,13 @@ input[type=_text]:focus, input[type=password]:focus {
       background-size: 400px auto;
     }
   }
+
+@media (max-width: 360px){
+  .topright{
+    top: 10px;
+    width: 60px;
+  }
+}
 
 @media (max-width: 320px){
   .recipes__box{
