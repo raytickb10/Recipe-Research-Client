@@ -45,6 +45,7 @@ body {
   background-size: 1550px 1250px;
 }
   
+  
 .explain_text{
   position: absolute;
   text-align: center;
@@ -280,7 +281,7 @@ h2{
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 400px;
+  margin-left: 200px;
   color: #f3f3f3;
   text-shadow: 2px 2px red;
   font-family: impact;
@@ -289,7 +290,7 @@ h2{
 input[type=_text], input[type=password]{
   width: 50%;
   padding: 15px;
-  margin: 5px 0 30px 400px;
+  margin: 5px 0 30px 200px;
   display: inline-block;
   border: none;
   background: #f1f1f1;  
@@ -309,7 +310,7 @@ input[type=_text]:focus, input[type=password]:focus {
   background-color: #366492;
   color: white;
   padding: 16px 20px;
-  margin: 8px 0 0 400px;
+  margin: 8px 0 0 200px;
   border: none;
   cursor: pointer;
   width: 50%;
@@ -323,14 +324,40 @@ input[type=_text]:focus, input[type=password]:focus {
 .signin {
   background-color: #f1f1f1;
   width: 350px;
-  margin: 8px 0 0 580px;
+  margin: 8px 0 0 200px;
   text-align: center;
 }
+}
+  
+  @media (max-width: 1110px) {
+    .recipes__box{
+      width: 320px;
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    .recipes__box{
+      width: 260px;
+    }
+    .link_button{
+      height: 60px;
+      width: 100px;
+    }
+  }
   
   @media (max-width: 800px) {
   
     body{
-      background-size: 800px 1200px;
+      background-size: 800px auto;
+    }
+    
+    .col-md-4{
+      max-width: 33.3333%;
+      flex: 0 0 33%;
+      width: 100%;
+      height: 350px;
+      display: block;
+      margin-bottom: 5rem;
     }
     
     .topright{
@@ -347,7 +374,7 @@ input[type=_text]:focus, input[type=password]:focus {
     }
     
     .signin, .registerbtn, .form-error, .labels, input[type=_text], input[type=password] {
-      margin-left: 250px;
+      margin-left: 200px;
     }
     
     h2{
@@ -372,7 +399,30 @@ input[type=_text]:focus, input[type=password]:focus {
     }
   }
   
-  @media (max-width: 380px) {
+  @media (max-width: 730px) {
+  
+    .col-md-4{
+      max-width: 50%;
+      flex: 0 0 50%;
+      width: 100%;
+      height: 350px;
+      display: block;
+      margin-bottom: 5rem;
+    }
+  
+  }
+
+@media (max-width: 600px){
+  .signin, .registerbtn, .form-error, .labels, input[type=_text], input[type=password] {
+      margin-left: 0px;
+    }
+  
+  #login_text{
+      right: 10px;
+    }
+}
+  
+  @media (max-width: 480px) {
   
     h2{
       font-size: 1.8em;
@@ -380,7 +430,8 @@ input[type=_text]:focus, input[type=password]:focus {
     }
     
     .recipes__box{
-      width: 330px;
+      width: 320px;
+      margin-left: -8px;
     }
     
     #testing_text{
@@ -397,19 +448,30 @@ input[type=_text]:focus, input[type=password]:focus {
      }
     
     .link_button{
-      font-size: 18px;
-      width: 200px;
-      height: 40px;
-      margin-top: 80px;
+      font-size: 14px;
+      width: 70px;
+      height: 50px;
     }
     
     #login_text{
-      right: 80px;
+      right: 0px;
     }
     
     .col-md-4{
       max-width: 60%;
+      flex: 0 0 100%;
       height: none;
+    }
+    
+    .row{
+      position: relative;
+      display: inline-block;
+      flex-wrap: wrap;
+      margin: 0 0 0 0;
+    }
+    
+    .container{
+      display: inline-block;
     }
     
     .form__input{
@@ -421,7 +483,9 @@ input[type=_text]:focus, input[type=password]:focus {
     }
     
     .signin{
-      margin-left: 10px;
+      margin-left: -8px;
+      width: 320px;
+      
     }
     
     .active-recipe__img{
@@ -441,8 +505,21 @@ input[type=_text]:focus, input[type=password]:focus {
     }
     
     body {
-      background-size: 400px 800px;
+      background-size: 400px auto;
     }
   }
+
+@media (max-width: 320px){
+  .recipes__box{
+      width: 300px;
+    }
   
+  .App-title {
+    font-size: 2.5em;
+    margin-top: -18px;
+  }
+  
+  #login_text {
+    top: 1px;
+  }
 }
