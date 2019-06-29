@@ -58,7 +58,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Recipe Researcher</h1>
+          <h1 className="App-title">Recipe<br/>Researcher</h1>
           <div className="welcome_text"><p  id="testing_text" >{this.state.myText}</p></div>
           <HeaderBar />
           <div style={{visibility: this.state.explanation}}>
