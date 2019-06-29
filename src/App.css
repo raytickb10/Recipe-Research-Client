@@ -49,7 +49,7 @@ body {
   position: absolute;
   text-align: center;
   top: 300px;
-  right: 300px;
+  background-color: gray;
 }
 
 .link_button{
@@ -195,7 +195,8 @@ input:-webkit-autofill {
 
 .active-recipe {
   margin: 0 auto;
-  width: 60%;
+  width: 50%;
+  background-color: darkslategray;
 }
 
 .active-recipe__img {
