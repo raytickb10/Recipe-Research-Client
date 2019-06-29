@@ -12,6 +12,7 @@ export function LandingPage(props) {
 
     return (
         <div className="home">
+        <div className="back-header"></div>
             <header className="App-header">    
             <h2>Log In to Recipe Researcher</h2>
             </header>
