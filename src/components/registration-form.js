@@ -19,7 +19,6 @@ export class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div className="back-header"></div>
             <form
                 className="login-form"
                 onSubmit={this.props.handleSubmit(values =>
