@@ -465,7 +465,7 @@ input[type=_text]:focus, input[type=password]:focus {
     
     .link_button{
       font-size: 14px;
-      width: 70px;
+      width: 80px;
       height: 50px;
     }
     
@@ -527,8 +527,13 @@ input[type=_text]:focus, input[type=password]:focus {
 
 @media (max-width: 360px){
   .topright{
-    top: 10px;
-    width: 60px;
+    top: 20px;
+    width: 70px;
+  }
+  
+  .link_button{
+    top: 20px;
+    width: 70px;
   }
 }
 
