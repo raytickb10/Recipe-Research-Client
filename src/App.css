@@ -340,7 +340,10 @@ input[type=_text]:focus, input[type=password]:focus {
   text-align: center;
 }
 }
-  
+
+
+
+/*
   @media (max-width: 1110px) {
     .recipes__box{
       width: 320px;
@@ -414,8 +417,6 @@ input[type=_text]:focus, input[type=password]:focus {
     .active-recipe__img{
       height: 100%;
     }
-    
-    
   }
   
   @media (max-width: 730px) {
@@ -559,3 +560,4 @@ input[type=_text]:focus, input[type=password]:focus {
     top: 1px;
   }
 }
+*/
