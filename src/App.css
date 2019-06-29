@@ -321,7 +321,7 @@ input[type=_text]:focus, input[type=password]:focus {
   
 .form-error{
   color: red;
-  margin: 8px 0 0 400px;
+  margin: 8px 0 0 300px;
   }
   
 .registerbtn {
@@ -348,7 +348,27 @@ input[type=_text]:focus, input[type=password]:focus {
 }
 }
 
-
+@media (max-width: 800px) {
+  h2{
+    font-size: 3.0em;
+  }
+  
+  .labels{
+    margin-left: 200px;
+  }
+  
+  input[type=_text], input[type=password] {
+    margin-left: 200px;
+  }
+  
+  .registerbtn {
+    margin-left: 200px;
+  }
+  
+  .form-error {
+    margin-left: 200px;
+  }
+}
 
 /*
   @media (max-width: 1110px) {
