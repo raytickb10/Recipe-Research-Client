@@ -14,7 +14,7 @@ export function RegistrationPage(props) {
         <div className="home">
         <div className="back-header"></div>
             <header className="App-header">    
-            <h2>Register for Recipe Researcher</h2>
+            <h2>Register for <br/> Recipe Researcher</h2>
             </header>
             <RegistrationForm />
             <div className="container signin">
