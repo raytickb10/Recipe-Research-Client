@@ -73,10 +73,10 @@ body {
   
   }
   
-  #login_text{
-    top: 50px;
-    right: 50px;
-    text-align: center;
+ #login_text{
+  top: 50px;
+  right: 50px;
+  text-align: center;
   }
   
 .welcome_text{
@@ -278,7 +278,7 @@ input:-webkit-autofill {
 h2{
   text-align: center;
   font-size: 3.5em;
-  margin-top: -10px;
+  margin-top: 20px;
   margin-bottom: 100px;
   color: #f3f3f3;
   text-shadow: 2px 2px red;
@@ -290,19 +290,20 @@ h2{
   font-size: 1.5em;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 200px;
+  margin-left: 300px;
   color: #f3f3f3;
   text-shadow: 2px 2px red;
   font-family: impact;
 }
   
 input[type=_text], input[type=password]{
-  width: 50%;
+  width: 60%;
   padding: 15px;
-  margin: 5px 0 30px 200px;
+  margin: 5px 0 30px 300px;
   display: inline-block;
   border: none;
-  background: #f1f1f1;  
+  background: #f1f1f1;
+  font-size: 20px;  
  }
   
 input[type=_text]:focus, input[type=password]:focus {
@@ -319,11 +320,12 @@ input[type=_text]:focus, input[type=password]:focus {
   background-color: #366492;
   color: white;
   padding: 16px 20px;
-  margin: 8px 0 0 200px;
+  margin: 8px 0 0 300px;
   border: none;
   cursor: pointer;
-  width: 50%;
+  width: 60%;
   opacity: 0.9;
+  font-size: 20px;
 }
 
 .registerbtn:hover {
@@ -332,8 +334,8 @@ input[type=_text]:focus, input[type=password]:focus {
   
 .signin {
   background-color: #f1f1f1;
-  width: 350px;
-  margin: 8px 0 0 200px;
+  width: 100%;
+  margin: 0 0 0 0;
   text-align: center;
 }
 }
