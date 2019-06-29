@@ -57,7 +57,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <div className="back-header"></div>
         <header className="App-header">
           <h1 className="App-title">Recipe <br/> Researcher</h1>
           <div className="welcome_text"><p  id="testing_text" >{this.state.myText}</p></div>
@@ -66,6 +65,7 @@ class App extends Component {
             <NavLink exact to="/login" className="link_button" id="login_text" >Log In / Register</NavLink>
           </div>
         </header>
+      <div className="back-header"></div>
         <Form getRecipe={this.getRecipe} />
         <h2 className="explain_text" style={{visibility: this.state.explanation}}>Welcome to Recipe Researcher, a quick and easy guide to all things food. Get started by first logging in with our test account (username:tester password: password123) or sign up for a free account today. Then thousands of recipes are only a click away. So what are you waiting for, get started now!</h2>
         <div style={{visibility: this.state.showandtell}}>
