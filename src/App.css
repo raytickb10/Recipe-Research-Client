@@ -374,7 +374,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .back-header {
-    width: 120%;
+    width: 100%;
   }
   
   #login_text{
@@ -402,7 +402,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
-@media (max-width: 380px){
+@media (max-width: 420px){
   body{
     background-position-x: -400px;
   }
@@ -417,7 +417,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .back-header {
-    width: 120%;
+    width: 150%;
     height: 140px;
   }
   
@@ -472,7 +472,24 @@ input[type=_text]:focus, input[type=password]:focus {
     flex: 0 0 100%;
     margin-left: 20px;
   }
+}
+
+@media (max-width: 320px){
+  .topright {
+    right: -120px;
+  }
   
+  .col-md-4 {
+    margin-left: 50px;
+  }
+  
+  .form__input {    
+    margin-left: 90px;
+  }
+  
+  .form__button {
+    margin-left: 120px;
+  }
 }
 
 /*
