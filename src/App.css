@@ -165,7 +165,7 @@ body {
 }
 
 .form__input {
-  background: transparent;
+  background: white;
   border: 0;
   border-bottom: solid 2px #f3f3f3;
   margin-right: 10px;
@@ -190,7 +190,7 @@ body {
 
 input[type="text"] { 
   outline: none;
-  color: #f3f3f3;
+  color: black;
 }
 
 input:-webkit-autofill {
@@ -368,6 +368,10 @@ input[type=_text]:focus, input[type=password]:focus {
   .form-error {
     margin-left: 200px;
   }
+  
+  .form__input {
+    width: 30%;
+  }
 }
 
 @media (max-width: 600px){
@@ -375,6 +379,31 @@ input[type=_text]:focus, input[type=password]:focus {
     font-size: 2.5em;
     margin-top: 10px;
   }
+}
+
+@media (max-width: 320px){
+  body{
+    background-position-x: -400px;
+  }
+  
+  .App-title{
+    font-size: 2.5em;
+  }
+  
+  #login_text {
+    top: 10px;
+    right: -70px;
+  }
+  
+  .back-header {
+    width: 200%;
+    height: 140px;
+  }
+  
+  .form__input {
+    width: 80%;
+  }
+  
 }
 
 /*
