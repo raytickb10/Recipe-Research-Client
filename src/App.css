@@ -370,6 +370,13 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
+@media (max-width: 600px){
+  h2{
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
+}
+
 /*
   @media (max-width: 1110px) {
     .recipes__box{
