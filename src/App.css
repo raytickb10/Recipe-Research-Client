@@ -87,8 +87,14 @@ body {
   text-align: center;
 }
 
-.App-header {
+.back-header {
+  background-color: #2c3e50;
+  width: 2000px;
+  height: 170px;
   
+  }
+  
+.App-header {
   height: 170px;
   padding: 10px;
   color: #f3f3f3;
