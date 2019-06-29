@@ -57,6 +57,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <div className="back-header"></div>
         <header className="App-header">
           <h1 className="App-title">Recipe <br/> Researcher</h1>
           <div className="welcome_text"><p  id="testing_text" >{this.state.myText}</p></div>
