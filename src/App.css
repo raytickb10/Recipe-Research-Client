@@ -372,6 +372,14 @@ input[type=_text]:focus, input[type=password]:focus {
   .form__input {
     width: 30%;
   }
+  
+  .back-header {
+    width: 150%;
+  }
+  
+  #login_text{
+    right: 1px;
+  }
 }
 
 @media (max-width: 600px){
@@ -381,7 +389,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
-@media (max-width: 320px){
+@media (max-width: 360px){
   body{
     background-position-x: -400px;
   }
