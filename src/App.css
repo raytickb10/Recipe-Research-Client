@@ -410,6 +410,38 @@ input[type=_text]:focus, input[type=password]:focus {
   
   .form__input {
     width: 80%;
+    margin-left: 40px;
+  }
+  
+  h2{
+    font-size: 1.9em;
+    margin: 0 0 0 15px;
+  }
+  
+  .labels{
+    margin-left: 50px;
+  }
+  
+  input[type=_text], input[type=password] {
+    margin-left: 50px;
+    width: 90%;
+  }
+  
+  .registerbtn {
+    margin-left: 50px;
+    width: 90%;
+  }
+  
+  .form-error {
+    margin-left: 50px;
+  }
+  
+  .signin{
+    width: 120%;
+  }
+  
+  .explain_text {
+    margin-left: 40px;
   }
   
 }
