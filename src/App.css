@@ -354,19 +354,19 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .labels{
-    margin-left: 200px;
+    margin-left: 100px;
   }
   
   input[type=_text], input[type=password] {
-    margin-left: 200px;
+    margin-left: 100px;
   }
   
   .registerbtn {
-    margin-left: 200px;
+    margin-left: 100px;
   }
   
   .form-error {
-    margin-left: 200px;
+    margin-left: 100px;
   }
   
   .form__input {
@@ -374,11 +374,24 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .back-header {
-    width: 150%;
+    width: 120%;
   }
   
   #login_text{
     right: 1px;
+  }
+  
+  .signin{
+    margin: 0 0 0 -10px;
+  }
+  
+  .active-recipe {
+    width: 70%;
+  }
+  
+  .col-md-4 {
+    max-width: 50%;
+    flex: 0 0 50%;
   }
 }
 
@@ -389,7 +402,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 380px){
   body{
     background-position-x: -400px;
   }
@@ -399,12 +412,12 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   #login_text {
-    top: 10px;
-    right: -70px;
+    top: 30px;
+    left: 340px;
   }
   
   .back-header {
-    width: 200%;
+    width: 120%;
     height: 140px;
   }
   
@@ -442,6 +455,22 @@ input[type=_text]:focus, input[type=password]:focus {
   
   .explain_text {
     margin-left: 40px;
+  }
+  
+  .topright{
+    top: 70px;
+    right: -70px;
+  }
+  
+  #testing_text{
+    top: 10px;
+    right: -20px;
+  }
+  
+  .col-md-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-left: 20px;
   }
   
 }
