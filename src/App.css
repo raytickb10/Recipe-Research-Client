@@ -65,7 +65,7 @@ body {
  #testing_text{
   text-align: center;
   top: 25px;
-  left: 70px;
+  right: 70px;
   color: #f3f3f3;
   font-family: impact;
   text-shadow: 2px 2px red;
