@@ -416,7 +416,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
-@media (max-width: 420px){
+@media (max-width: 421px){
   body{
     background-position-x: -400px;
   }
@@ -491,19 +491,19 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
-@media (max-width: 375px){
+@media (max-width: 376px){
   .col-md-4 {
     margin-left: -10px;
   }
 }
   
-@media (max-width: 360px){
+@media (max-width: 361px){
   .col-md-4 {
     margin-left: -17px;
   }
 }
 
-@media (max-width: 320px){
+@media (max-width: 321px){
   .topright {
     right: 10px;
     top: 110px;
