@@ -67,7 +67,7 @@ class App extends Component {
           </div>
         </header>
         <Form getRecipe={this.getRecipe} />
-        <h3 className="explain_text" style={{display: this.state.explanation}}>Welcome to Recipe Researcher, a quick and easy guide to all things food. Get started by first logging in with our test account (username:tester password: password123) or sign up for a free account today. Then thousands of recipes are only a click away. So what are you waiting for, get started now!</h2>
+        <h3 className="explain_text" style={{display: this.state.explanation}}>Welcome to Recipe Researcher, a quick and easy guide to all things food. Get started by first logging in with our test account (username:tester password: password123) or sign up for a free account today. Then thousands of recipes are only a click away. So what are you waiting for, get started now!</h3>
         <div style={{visibility: this.state.showandtell}}>
           <Recipes recipes={this.state.recipes} />
         </div>
