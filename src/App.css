@@ -491,6 +491,18 @@ input[type=_text]:focus, input[type=password]:focus {
   }
 }
 
+@media (max-width: 375px){
+  .col-md-4 {
+    margin-left: -10px;
+  }
+}
+  
+@media (max-width: 360px){
+  .col-md-4 {
+    margin-left: -17px;
+  }
+}
+
 @media (max-width: 320px){
   .topright {
     right: 10px;
@@ -498,7 +510,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .col-md-4 {
-    margin-left: 50px;
+    margin-left: -24px;
   }
   
   .form__input {    
