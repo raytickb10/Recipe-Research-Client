@@ -49,6 +49,7 @@ body {
   text-align: center;
   top: 300px;
   background-color: gray;
+  position: absolute;
 }
 
 .link_button{
@@ -292,6 +293,15 @@ h2{
   font-family: impact;
 }
   
+h3{
+  text-align: center;
+  font-size: 3.5em;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  color: #f3f3f3;
+  font-family: impact;
+}
+  
 .labels{
   text-align: center;
   font-size: 1.5em;
@@ -352,6 +362,10 @@ input[type=_text]:focus, input[type=password]:focus {
     font-size: 3.0em;
   }
   
+  h3{
+    font-size: 3.0em;
+  }
+  
   .labels{
     margin-left: 100px;
   }
@@ -395,6 +409,11 @@ input[type=_text]:focus, input[type=password]:focus {
     font-size: 2.5em;
     margin-top: 10px;
   }
+  
+  h3{
+    font-size: 2.5em;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 420px){
@@ -427,6 +446,10 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   h2{
+    font-size: 1.9em;
+  }
+  
+  h3{
     font-size: 1.9em;
   }
   
@@ -464,13 +487,14 @@ input[type=_text]:focus, input[type=password]:focus {
   .col-md-4 {
     max-width: 100%;
     flex: 0 0 100%;
-    margin-left: 20px;
+    margin-left: 1px;
   }
 }
 
 @media (max-width: 320px){
   .topright {
-    right: -120px;
+    right: 10px;
+    top: 110px;
   }
   
   .col-md-4 {
@@ -478,10 +502,16 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .form__input {    
-    margin-left: 90px;
+    margin-left: 10px;
   }
   
   .form__button {
-    margin-left: 120px;
+    margin-left: 10px;
   }
+  
+  #login_text {
+    left: 215px;
+  }
+  
+  
 }
