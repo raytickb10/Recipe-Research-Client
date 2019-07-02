@@ -50,6 +50,7 @@ body {
   top: 300px;
   background-color: gray;
   position: absolute;
+  margin-left: -10px;
 }
 
 .link_button{
@@ -395,7 +396,7 @@ input[type=_text]:focus, input[type=password]:focus {
   }
   
   .active-recipe {
-    width: 70%;
+    width: 100%;
   }
   
   .col-md-4 {
